@@ -130,7 +130,7 @@
 -->
 
 - Criar arquivo "webpack.mix.js":
-> const mix = require('laravel-mix');
+   > const mix = require('laravel-mix');
 
 - Conteúdo do arquivo "webpack.mix.js":
 <!--
