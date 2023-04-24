@@ -15,7 +15,7 @@ As postagens devem ter um título, conteúdo, tags e categoria.
 - **Monitoramento de desempenho:** o DevOps Azure deve ser configurado para monitorar o desempenho do aplicativo e identificar problemas de desempenho.
 
 ### Arquitetura de Desenvolvimento
-Será utilizada a arquitetura de desenvolvimento MVC (Model-View-Controller), se tratando de um padrão de arquitetura de software 
+Será utilizada a arquitetura de desenvolvimento **MVC (Model-View-Controller)**, se tratando de um padrão de arquitetura de software 
 que divide a aplicação em três componentes principais:
 1. **Model:** é responsável por lidar com a lógica de negócios e interações com o banco de dados.
 2. **View:** é a camada responsável por apresentar os dados ao usuário em forma de interface gráfica.
