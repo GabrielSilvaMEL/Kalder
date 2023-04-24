@@ -1,4 +1,4 @@
-# Kalder
+# Kalder Blog
 > Projeto de desenvolvimento de aplicação web em Laravel.
 
 ### O Projeto
@@ -37,7 +37,7 @@ Serão utilizadas as seguintes ferramentas:
     - **Node.js** (execução do código JavaScript no lado do servidor);
     - **Vite** (empacotador de módulos);
     - **Breeze** (pacote do Laravel para autenticação de usuários):
-- **Figma** (design e prototipação das interfaces);
+- **Figma** (design e prototipação da interface);
 - **XAMP/WAMP** (execução da aplicação em um ambiente de servidor web local);
 - **MySQL** (gerenciamento do banco de dados).
 
