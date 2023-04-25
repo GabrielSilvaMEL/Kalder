@@ -1,0 +1,24 @@
+VIEWS
+  Telas Gerais
+    - Home (display resumido dos posts do projeto);
+    - Postagem Específica (display de uma postagem específica, com adição de uma seção para comentários);
+    - Perfil de Autor (contém informações referentes aos autores).
+     
+  Telas CRUD e os próprios CRUDs
+    - Display/Criar/Editar/Excluir Postagens;
+    - Display/Criar/Editar/Excluir Autores;
+    - Display/Criar/Editar/Excluir Comentários;
+    - Display/Criar/Editar/Excluir Categorias.
+
+MODELS
+  - Postagem (título; corpo; tag; data-pub; foto ilustrativa; autor (estrangeiro));
+  - Autor (nome; biografia; foto; email; senha (privado));
+  - Leitor (username; email; senha (privado));
+  - Comentário (título; corpo; data-comentário; leitor (estrangeiro));
+  - Categorias (nome; descricão; foto ilustrativa (opcional)).
+  
+RELAÇÕES ENTRE TABELAS/MODELS
+  Postagem - muitos para muitos - Tags;
+  Autor - um para muitos - Postagem;
+  Comentário - muitos para um - Postagem;
+  Leitor - muitos para muitos - Postagem.
