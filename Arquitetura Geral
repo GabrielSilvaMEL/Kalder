@@ -2,11 +2,11 @@ VIEWS
   Telas Gerais
     - Home (display resumido dos posts do projeto);
     - Postagem Específica (display de uma postagem específica, com adição de uma seção para comentários);
-    - Perfil de Autor (contém informações referentes aos autores).
+    - Perfil de Leitor/Autor (contém informações referentes aos usuários).
      
   Telas CRUD e os próprios CRUDs
     - Display/Criar/Editar/Excluir Postagens;
-    - Display/Criar/Editar/Excluir Autores;
+    - Display/Criar/Editar/Excluir Autores/Leitores;
     - Display/Criar/Editar/Excluir Comentários;
     - Display/Criar/Editar/Excluir Categorias.
 
