@@ -1,7 +1,7 @@
 VIEWS
   Telas Gerais
     - Home (display resumido dos posts do projeto);
-    - Postagem Específica (display de uma postagem específica, com adição de uma seção para comentários);
+    - Postagem Específica (display de uma postagem específica a partir da home, com adição de uma seção para comentários);
     - Perfil de Leitor/Autor (contém informações referentes aos usuários).
      
   Telas CRUD e os próprios CRUDs
@@ -18,7 +18,7 @@ MODELS
   - Categorias (nome; descricão; foto ilustrativa (opcional)).
   
 RELAÇÕES ENTRE TABELAS/MODELS
-  Postagem - muitos para muitos - Tags;
-  Autor - um para muitos - Postagem;
-  Comentário - muitos para um - Postagem;
-  Leitor - muitos para muitos - Postagem.
+  > Postagem - muitos para muitos - Tags;
+  > Autor - um para muitos - Postagem;
+  > Comentário - muitos para um - Postagem;
+  > Leitor - muitos para muitos - Postagem.
