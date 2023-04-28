@@ -7,11 +7,11 @@ VIEWS
   Telas CRUD e os próprios CRUDs
     - Display/Criar/Editar/Excluir Postagens;
     - Display/Criar/Editar/Excluir Autores/Leitores;
-    - Display/Criar/Editar/Excluir Comentários;
-    - Display/Criar/Editar/Excluir Categorias.
+    - Display/Criar/Editar/Excluir Comentários (descontinuado)
+    - Display/Criar/Editar/Excluir Categorias (descontinuado)
 
 MODELS
-  - Postagem (título; corpo; tag; data-pub; foto ilustrativa; autor (estrangeiro));
+  - Postagem (título; titulo-resumido; corpo; data-pub; foto ilustrativa; autor (estrangeiro));
   - Autor (nome; biografia; foto; email; senha (privado));
   - Leitor (username; email; senha (privado));
   - Comentário (título; corpo; data-comentário; leitor (estrangeiro));
