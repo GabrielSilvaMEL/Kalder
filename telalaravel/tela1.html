@@ -32,19 +32,15 @@
             color: white;
             margin: 0;
             padding: 0;
+
         }
 
         header {
-            display: fixed;
-            align-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .mid {
-            display: flex;
-            align-content: center;
-            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;/* define a ordem de empilhamento, para que o cabeçalho fique na frente de outros elementos */
             text-align: center;
         }
 
@@ -59,37 +55,23 @@
             max-height: 20rem;
         }
 
+        footer {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+
+        }
+
+        footer p {
+            color: gray;
+            font-family: 'Open Sans', sans-serif;
+        }
+
         .linha {
             margin: 0 1rem 0 1rem
         }
-
-
-        .containerl {
-            position: relative;
-            text-align: center;
-            color: white;
-
-        }
-
-        .post {
-
-            background-color: orange;
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-        }
-
-        .postlinha {
-            display: flex;
-            align-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: blueviolet;
-            gap: 5rem;
-
-        }
-
-
 
         .container {
             display: grid;
@@ -108,28 +90,21 @@
         }
 
         .card {
-            height: 15rem;
-            width: 15rem;
+            height: 20rem;
+            width: 20rem;
             margin: 10px;
             background-color: rgb(31, 30, 31);
             border: linear-gradient(90deg, rgba(34, 27, 35, 1) 0%, rgba(27, 30, 29, 0.258140756302521) 65%, rgba(255, 255, 255, 1) 100%);
         }
 
-        footer {
-            background-color: black;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 3rem;
-            gap: 3rem;
-        }
-
         .right {
             text-align: right;
+            width: 50%;
         }
 
         .left {
             text-align: left;
+            width: 50%
         }
 
         .background-image {
@@ -144,7 +119,6 @@
 <body>
     <div class="background-image">
         <header>
-
             <h1>Kalder Blog</h1>
             <div class="linha">
                 <a class="linha" href="">Home</a>
@@ -167,29 +141,21 @@
             </div>
         </div>
 
-
-        <footer>
-
-            <div style="text-align: right;width:50%">
+        
+    </div>
+    <footer>
+            <div class="right">
                 <h3>Pres. Prudente</h3>
                 <p>Rua Cidade Azul, 1945</p>
                 <p>Jardim Brasil</p>
             </div>
-            <div style="text-align: left;width:50%">
+            <div class="left">
                 <h3>Contato</h3>
-                <h3>+55 (18) 98805-8371</h3>
+                <p>+55 (18) 98805-8371</p>
                 <p>kalderblog@gmail.com</p>
             </div>
 
         </footer>
-    </div>
-
-
-
-
-
-
-
 </body>
 
 </html>
