@@ -29,12 +29,9 @@
     <style>
         * {
             font-family: 'Bebas Neue', cursive;
-            background-color: black;
             color: white;
-        }
-
-        body {
-            background-color: black;
+            margin: 0;
+            padding: 0;
         }
 
         header {
@@ -92,7 +89,7 @@
 
         }
 
-      
+
 
         .container {
             display: grid;
@@ -111,76 +108,84 @@
         }
 
         .card {
-            height: 400px;
-            width: 400px;
+            height: 15rem;
+            width: 15rem;
             margin: 10px;
             background-color: rgb(31, 30, 31);
             border: linear-gradient(90deg, rgba(34, 27, 35, 1) 0%, rgba(27, 30, 29, 0.258140756302521) 65%, rgba(255, 255, 255, 1) 100%);
         }
+
         footer {
+            background-color: black;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 3rem;
             gap: 3rem;
         }
-        .right{
+
+        .right {
             text-align: right;
         }
-        .left{
+
+        .left {
             text-align: left;
         }
-        .background-image{
-            position:relative;
+
+        .background-image {
             background-image: url(foto.jpg);
             background-size: cover;
-            background-position: center;
+            background-repeat: no-repeat;
             height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <header class="background-image">
+    <div class="background-image">
+        <header>
 
-        <h1>Kalder Blog</h1>
-        <div class="linha">
-            <a class="linha" href="">Home</a>
-            <a class="linha" href="">Sobre nós</a>
-            <a class="linha" href="">Perfil</a>
+            <h1>Kalder Blog</h1>
+            <div class="linha">
+                <a class="linha" href="">Home</a>
+                <a class="linha" href="">Sobre nós</a>
+                <a class="linha" href="">Perfil</a>
+            </div>
+        </header>
+        <div class="container">
+            <div class="card">
+                <!-- conteúdo do card -->
+            </div>
+            <div class="card">
+                <!-- conteúdo do card -->
+            </div>
+            <div class="card">
+                <!-- conteúdo do card -->
+            </div>
+            <div class="card">
+                <!-- conteúdo do card -->
+            </div>
         </div>
-    </header>
 
-    <div class="container">
-        <div class="card">
-            <!-- conteúdo do card -->
-        </div>
-        <div class="card">
-            <!-- conteúdo do card -->
-        </div>
-        <div class="card">
-            <!-- conteúdo do card -->
-        </div>
-        <div class="card">
-            <!-- conteúdo do card -->
-        </div>
+
+        <footer>
+
+            <div style="text-align: right;width:50%">
+                <h3>Pres. Prudente</h3>
+                <p>Rua Cidade Azul, 1945</p>
+                <p>Jardim Brasil</p>
+            </div>
+            <div style="text-align: left;width:50%">
+                <h3>Contato</h3>
+                <h3>+55 (18) 98805-8371</h3>
+                <p>kalderblog@gmail.com</p>
+            </div>
+
+        </footer>
     </div>
 
 
-    <footer>
 
-        <div style="text-align: right;width:50%">
-            <h3>Pres. Prudente</h3>
-            <p>Rua Cidade Azul, 1945</p>
-            <p>Jardim Brasil</p>
-        </div>
-        <div style="text-align: left;width:50%">
-            <h3>Contato</h3>
-            <h3>+55 (18) 98805-8371</h3>
-            <p>kalderblog@gmail.com</p>
-        </div>
-
-    </footer>
 
 
 
