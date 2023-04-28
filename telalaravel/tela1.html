@@ -92,7 +92,7 @@
 
         }
 
-        
+      
 
         .container {
             display: grid;
@@ -122,6 +122,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 3rem;
+            gap: 3rem;
         }
         .right{
             text-align: right;
@@ -129,12 +130,18 @@
         .left{
             text-align: left;
         }
+        .background-image{
+            position:relative;
+            background-image: url(foto.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
     </style>
 </head>
 
 <body>
-
-    <header>
+    <header class="background-image">
 
         <h1>Kalder Blog</h1>
         <div class="linha">
@@ -168,6 +175,7 @@
             <p>Jardim Brasil</p>
         </div>
         <div style="text-align: left;width:50%">
+            <h3>Contato</h3>
             <h3>+55 (18) 98805-8371</h3>
             <p>kalderblog@gmail.com</p>
         </div>
