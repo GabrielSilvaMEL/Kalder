@@ -4,7 +4,7 @@
 
 
 <div class="topo">
-        
+
   <div class="container">
       <div class="card">
           <!-- conteúdo do card -->
@@ -35,4 +35,4 @@
 
         </footer>
 
-@endsection  
+@endsection

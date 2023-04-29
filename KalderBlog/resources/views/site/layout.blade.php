@@ -106,23 +106,29 @@
             background-repeat: no-repeat;
             height: 100vh;
         } */
-        
+
         .topo {
           background-image: url(https://images.pexels.com/photos/7972038/pexels-photo-7972038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
           background-repeat: no-repeat;
           background-size: cover;
         }
-        .f{
-      display:flex;
-      flex-direction:column;
-      align-items: center;
-    }
-    </style> 
+        .mid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            justify-items: center;
+            align-items: center;
+            height: 80%;
+            width: 80%;
+            margin: auto;
+            grid-column-gap: 0.5rem;
+        }
+    </style>
     </head>
 
-  <body>
+  <body style="background-color:black">
     <!-- NavBar -------------------------------------------------------->
-    <header > 
+    <header >
             <h1>Kalder Blog</h1>
             <div class="linha">
                 <a class="linha" href="">Home</a>
