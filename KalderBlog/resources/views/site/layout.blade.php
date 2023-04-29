@@ -27,6 +27,9 @@
             padding: 0;
 
         }
+        html{
+           
+        }
 
         header {
             position:fixed;
@@ -111,25 +114,30 @@
           background-image: url(https://images.pexels.com/photos/7972038/pexels-photo-7972038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
           background-repeat: no-repeat;
           background-size: cover;
+          z-index: 1;
         }
-        .f{
-            
+        .topo > * {
+            margin: 30px;
+            z-index: 0;
+        }
+        .f{ 
             width: 30rem;
-            margin: 5rem auto 2rem;
+            margin: 30px auto 30px;
         }
+        
     </style> 
     </head>
 
   <body style="background-color:black">
     <!-- NavBar -------------------------------------------------------->
     <header > 
-            <h1>Kalder Blog</h1>
-            <div class="linha">
-                <a class="linha" href="">Home</a>
-                <a class="linha" href="">Sobre nós</a>
-                <a class="linha" href="">Perfil</a>
-            </div>
-        </header>
+        <h1>Kalder Blog</h1>
+        <div class="linha">
+            <a class="linha" href="">Home</a>
+            <a class="linha" href="">Sobre nós</a>
+            <a class="linha" href="">Perfil</a>
+        </div>
+    </header>
 
     <!-- Main -->
     <main role="main">
