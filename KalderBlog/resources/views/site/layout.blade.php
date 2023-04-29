@@ -106,11 +106,17 @@
             background-repeat: no-repeat;
             height: 100vh;
         } */
+        
         .topo {
           background-image: url(https://images.pexels.com/photos/7972038/pexels-photo-7972038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
           background-repeat: no-repeat;
           background-size: cover;
         }
+        .f{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+    }
     </style> 
     </head>
 
