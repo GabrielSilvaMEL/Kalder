@@ -14,6 +14,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('postsmanager.create');
+    return view('postsmanager.index');
 });
 // Route::get('/',[HomeController::class,'home'])->name('site.home');

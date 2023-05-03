@@ -144,7 +144,7 @@
         gap:20px;
         }
         .fotinha {
-            width: 200px;
+            width: 202px;
             border: 2px solid white;
             border-radius:100px;
             height: 200px;
@@ -155,7 +155,50 @@
         .width100{
             width:100%
         }
-        
+        .index-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+}
+.index-container1 {
+  width: 565px;
+  height: 978px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.index-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 254px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.index-container3 {
+  width: 100%;
+  height: 179px;
+  display: flex;
+  align-items: flex-start;
+}
+.index-image {
+  width: 120px;
+  height: 120px;
+  align-self: center;
+  object-fit: cover;
+}
+.index-text1 {
+  width: 100%;
+  align-self: center;
+}
+
+
     </style> 
     </head>
 
