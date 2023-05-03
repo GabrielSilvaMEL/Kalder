@@ -1,0 +1,43 @@
+html {
+    height: 100%;
+}
+body {
+    background: #000000;
+    background: linear-gradient(180deg, #20182a 0%, #182b27 100%);
+}
+
+/** NAVBAR */
+.navbar {
+    background: #000000;
+    background: linear-gradient(180deg, #00000063 0%, #00000000 60%);   
+    --bs-bg-opacity: 0;
+}
+.navbar h1, .navbar a {
+    color: white !important;
+}
+
+.navbar a:hover {
+    text-shadow: 0px 10px 20px #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+}
+
+/** FOOTER */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+}
+.footer h3 {
+    color:white;
+    font-weight: 400;
+}
+.footer p {
+    color: #ACACAC;
+}
