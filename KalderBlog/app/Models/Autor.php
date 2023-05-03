@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Autor extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'titulo',
-        'tituloresumido',
-        'corpo',
-        'datapub',
-        'foto ilustrativa',
-        'autor',
+        'nome',
+        'biografia',
+        'foto',
+        'email',
+        'senha',
     ];
 }
