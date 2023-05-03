@@ -159,9 +159,6 @@
 
 
 
-
-
-
         .index-container {
   width: 100%;
   display: flex;
@@ -192,6 +189,26 @@
   justify-content: center;
 }
 .index-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.index-button {
+    padding:3px;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #06a11a;
+}
+.index-button1 {
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #b90707;
+}
+.index-container4 {
   width: 100%;
   height: 179px;
   display: flex;
@@ -206,7 +223,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-round);
 }
-.index-container4 {
+.index-container5 {
   flex: 0 0 auto;
   width: 441px;
   border: 2px dashed rgba(120, 120, 120, 0.4);

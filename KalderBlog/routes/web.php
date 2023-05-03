@@ -14,6 +14,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('postsmanager.index');
+    return view('perfilmanager.index');
 });
 // Route::get('/',[HomeController::class,'home'])->name('site.home');
