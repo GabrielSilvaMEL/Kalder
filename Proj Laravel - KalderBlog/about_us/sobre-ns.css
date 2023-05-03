@@ -1,9 +1,6 @@
-* {
-  font-family: 'Open Sans', sans-serif;
-}
-
 body {
   background-image: linear-gradient(180deg, #20182a 0%, #070d0c 100%);
+  font-family: 'Open Sans', sans-serif;
 }
 
 /** GERAL */
@@ -35,7 +32,7 @@ body {
     position: absolute;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #000000;
   }
   .contato-heads {
     color: #ffffff;
@@ -92,15 +89,15 @@ body {
   /** BODY */
   .sobre-ns-corposobrens {
     top: 280px;
-    left: 206px;
-    width: 1508px;
+    left: 380px;
+    width: 1110px;
     height: 1039px;
     display: flex;
     position: absolute;
     align-items: flex-start;
     flex-shrink: 0;
-    border-radius: 30px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.12999999523162842) 0%, rgba(21, 15, 29, 0) 29%);
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, #00000021 0%, #150f1d00 10%);
   }
   .aboutus-title {
     top: 30px;
@@ -122,9 +119,9 @@ body {
     top: 97px;
     left: 62px;
     color: #ffffff;
-    width: 1384px;
+    width: 990px;
     height: auto;
-    position: absolute;
+    position: relative;
     font-size: 24px;
     font-style: Regular;
     text-align: left;
@@ -146,7 +143,7 @@ body {
     position: absolute;
     align-items: flex-start;
     flex-shrink: 0;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7900000214576721) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 0, 0, 0) 100%);
+    background-image: linear-gradient(180deg, #000000c9 0%, #00000000 100%, #ff000000 100%);
   }
   .navbar-span {
     top: 122px;
@@ -161,17 +158,15 @@ body {
     text-decoration: none;
   }
   .navbar-title {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue' !important;
     top: 22px;
     left: 819px;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     height: auto;
     position: absolute;
-    font-size: 70px;
     text-align: left;
-    font-weight: bold;
     line-height: normal;
     font-stretch: normal;
     text-decoration: none;
+    font-size: 24px;
   }
-  
