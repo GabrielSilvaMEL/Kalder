@@ -32,7 +32,7 @@
         }
 
         header {
-            position:fixed;
+           
             top: 0;
             left: 0;
             width: 100%;
@@ -123,6 +123,37 @@
         .f{ 
             width: 30rem;
             margin: 30px auto 30px;
+        }
+        .home-container {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        min-height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000000;
+        color:white;
+        
+        }
+        .home-container1 {
+        width: 457px;            
+        height: 999px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap:20px;
+        }
+        .fotinha {
+            width: 200px;
+            border: 2px solid white;
+            border-radius:100px;
+            height: 200px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .width100{
+            width:100%
         }
         
     </style> 
