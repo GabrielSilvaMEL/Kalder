@@ -155,6 +155,13 @@
         .width100{
             width:100%
         }
+        
+
+
+
+
+
+
         .index-container {
   width: 100%;
   display: flex;
@@ -178,6 +185,9 @@
   display: flex;
   align-self: center;
   align-items: center;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius2);
   flex-direction: column;
   justify-content: center;
 }
@@ -192,11 +202,20 @@
   height: 120px;
   align-self: center;
   object-fit: cover;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-round);
 }
-.index-text1 {
-  width: 100%;
-  align-self: center;
+.index-container4 {
+  flex: 0 0 auto;
+  width: 441px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
+
 
 
     </style> 
