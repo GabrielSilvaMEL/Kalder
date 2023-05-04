@@ -13,7 +13,7 @@ class Post extends Model
         'tituloresumido',
         'corpo',
         'datapub',
-        'foto ilustrativa',
+        'foto',
         'autor',
     ];
 }

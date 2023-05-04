@@ -3,7 +3,6 @@
 @section('content')
 
 <div class="home-container">
-<div class="fotinha"></div>
 <div class="home-container1">
     
     <div class="width100">

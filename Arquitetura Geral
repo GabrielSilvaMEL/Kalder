@@ -11,7 +11,7 @@ VIEWS
     - Display/Criar/Editar/Excluir Categorias (descontinuado)
 
 MODELS
-  - Postagem (título; titulo-resumido; corpo; data-pub; foto ilustrativa; autor (estrangeiro));
+  - Postagem (título; tituloresumido; corpo; datapub; foto; autor (estrangeiro));
   - Autor (nome; biografia; foto; email; senha (privado));
   - Leitor (username; email; senha (privado));
   - Comentário (título; corpo; data-comentário; leitor (estrangeiro));
