@@ -1,0 +1,104 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+   
+}
+
+header {
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;/* define a ordem de empilhamento, para que o cabeçalho fique na frente de outros elementos */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+img {
+    max-height: 20rem;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+footer p {
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.linha {
+    margin: 0 1rem 0 1rem
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    grid-column-gap: 0.5rem;
+}
+
+.rightalign {
+    text-align: right;
+}
+
+.card {
+    height: 20rem;
+    width: 20rem;
+    margin: 10px;
+    background-color: rgb(31, 30, 31);
+    border: linear-gradient(90deg, rgba(34, 27, 35, 1) 0%, rgba(27, 30, 29, 0.258140756302521) 65%, rgba(255, 255, 255, 1) 100%);
+}
+
+.right {
+    text-align: right;
+    width: 50%;
+}
+
+.left {
+    text-align: left;
+    width: 50%
+}
+
+/* .background-image {
+    background-image: url(foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+} */
+
+.topo {
+  background-image: url(https://images.pexels.com/photos/7972038/pexels-photo-7972038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.topo > * {
+    margin: 30px;
+    z-index: 0;
+}
+.f{ 
+    width: 30rem;
+    margin: 30px auto 30px;
+}

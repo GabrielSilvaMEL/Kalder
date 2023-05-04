@@ -20,110 +20,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <style>
-        * {
-            font-family: 'Bebas Neue', cursive;
-            color: white;
-            margin: 0;
-            padding: 0;
+      html {
+    height: 100%;
+}
+body {
+    background: #000000;
+    background: linear-gradient(180deg, #20182a 0%, #182b27 100%);
+}
 
-        }
-        html{
-           
-        }
+.dis-txt {
+    user-select: none;
+}
 
-        header {
-           
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 9999;/* define a ordem de empilhamento, para que o cabeçalho fique na frente de outros elementos */
-            text-align: center;
-        }
+/** NAVBAR */
+.navbar {
+    background: #000000;
+    background: linear-gradient(180deg, #00000063 0%, #00000000 60%);   
+    --bs-bg-opacity: 0;
+}
+.navbar h1, .navbar a {
+    color: white !important;
+}
 
-        a {
-            text-decoration: none;
-            color: white;
-            font-family: 'Open Sans', sans-serif;
+.navbar a:hover {
+    text-shadow: 0px 15px 25px #ffffff;
+    transition: 0.3s;
+}
 
-        }
+.navbar-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+}
 
-        img {
-            max-height: 20rem;
-        }
+/** BODY */
+.image-custom {
+    width: 200px;
+    height: auto;
+    border-radius: 292px;
+}
 
-        footer {
-            background-color: black;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 3rem;
+/** FOOTER */
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+}
+.footer h4 {
+    color:white;
+    font-weight: 400;
+}
+.footer p {
+    color: #ACACAC;
+}
 
-        }
 
-        footer p {
-            color: gray;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .linha {
-            margin: 0 1rem 0 1rem
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            justify-items: center;
-            align-items: center;
-            height: 80%;
-            width: 80%;
-            margin: auto;
-            grid-column-gap: 0.5rem;
-        }
-
-        .rightalign {
-            text-align: right;
-        }
-
-        .card {
-            height: 20rem;
-            width: 20rem;
-            margin: 10px;
-            background-color: rgb(31, 30, 31);
-            border: linear-gradient(90deg, rgba(34, 27, 35, 1) 0%, rgba(27, 30, 29, 0.258140756302521) 65%, rgba(255, 255, 255, 1) 100%);
-        }
-
-        .right {
-            text-align: right;
-            width: 50%;
-        }
-
-        .left {
-            text-align: left;
-            width: 50%
-        }
-
-        /* .background-image {
-            background-image: url(foto.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-        } */
-        
-        .topo {
-          background-image: url(https://images.pexels.com/photos/7972038/pexels-photo-7972038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-          background-repeat: no-repeat;
-          background-size: cover;
-          z-index: 1;
-        }
-        .topo > * {
-            margin: 30px;
-            z-index: 0;
-        }
-        .f{ 
-            width: 30rem;
-            margin: 30px auto 30px;
-        }
         .home-container {
         width: 100%;
         display: flex;
@@ -155,105 +107,127 @@
         .width100{
             width:100%
         }
-        
-
-
 
         .index-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  background-color: #000000;
-}
-.index-container1 {
-  width: 565px;
-  height: 978px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.index-container2 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: 254px;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  border-color: #ffffff;
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius2);
-  flex-direction: column;
-  justify-content: center;
-}
-.index-container3 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-}
-.index-button {
-    padding:3px;
-  color: #ffffff;
-  border-radius: 20px;
-  background-color: #06a11a;
-}
-.index-button1 {
-  color: #ffffff;
-  border-radius: 20px;
-  background-color: #b90707;
-}
-.index-container4 {
-  width: 100%;
-  height: 179px;
-  display: flex;
-  align-items: flex-start;
-}
-.index-image {
-  width: 120px;
-  height: 120px;
-  align-self: center;
-  object-fit: cover;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-round);
-}
-.index-container5 {
-  flex: 0 0 auto;
-  width: 441px;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-
+          width: 100%;
+          display: flex;
+          overflow: auto;
+          min-height: 100vh;
+          align-items: center;
+          flex-direction: column;
+          background-color: #000000;
+        }
+        .index-container1 {
+          width: 565px;
+          height: 978px;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .index-container2 {
+          flex: 0 0 auto;
+          width: 100%;
+          height: 254px;
+          display: flex;
+          align-self: center;
+          align-items: center;
+          border-color: #ffffff;
+          border-width: 1px;
+          border-radius: var(--dl-radius-radius-radius2);
+          flex-direction: column;
+          justify-content: center;
+        }
+        .index-container3 {
+          flex: 0 0 auto;
+          width: 100%;
+          height: 100px;
+          display: flex;
+          align-self: center;
+          align-items: center;
+          justify-content: center;
+        }
+        .index-button {
+            padding:3px;
+          color: #ffffff;
+          border-radius: 20px;
+          background-color: #06a11a;
+        }
+        .index-button1 {
+          color: #ffffff;
+          border-radius: 20px;
+          background-color: #b90707;
+        }
+        .index-container4 {
+          width: 100%;
+          height: 179px;
+          display: flex;
+          align-items: flex-start;
+        }
+        .index-image {
+          width: 120px;
+          height: 120px;
+          align-self: center;
+          object-fit: cover;
+          border-color: var(--dl-color-gray-black);
+          border-width: 1px;
+          border-radius: var(--dl-radius-radius-round);
+        }
+        .index-container5 {
+          flex: 0 0 auto;
+          width: 441px;
+          border: 2px dashed rgba(120, 120, 120, 0.4);
+          height: 100%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+        }
 
     </style> 
     </head>
 
   <body style="background-color:black">
     <!-- NavBar -------------------------------------------------------->
-    <header > 
-        <h1>Kalder Blog</h1>
-        <div class="linha">
-            <a class="linha" href="">Home</a>
-            <a class="linha" href="">Sobre nós</a>
-            <a class="linha" href="">Perfil</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="display:block;">
+
+            <!--* head -->
+            <h1 class="navbar-title text-center dis-txt">KALDER BLOG</h1>
+
+            <!--* navbar-toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--* content -->
+            <div class="collapse navbar-collapse" style="justify-content:center;" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Main -->
     <main role="main">
         @yield('content')
     </main>
 
+    <div class="footer pt-3">
+        <div class="mt-3 row">
+            <div class="col-6 text-end">
+                <h4 class="dis-txt">Pres. Prudente</h4>
+                <p class="mb-0">Rua Cidade Azul, 1945</p>
+                <p>Jardim Brasil</p>
+            </div>
+            <div class="col-6 text-start">
+                <h4 class="dis-txt">Contato</h4>
+                <p class="mb-0">+55 (18) 98805-8371</p>
+                <p>kalderblog@gmail.com</p>
+            </div>
+        </div>
+    </div>
     <!-- Boot -------------------------------------------------------->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
