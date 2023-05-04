@@ -10,7 +10,7 @@
     <p></p>
     <div class="row">
         
-        <!-- Nome do show -->
+        <!-- titulo -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Titulo:</strong>
@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <!-- Descrição -->
+        <!-- Titulo resumido -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Titulo Resumido:</strong>
@@ -26,10 +26,10 @@
             </div>
         </div>
 
-        <!-- //* QtdeIngressos -->
+        <!-- //* Corpo -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Corpo:</strong>
+                <strong>Corpo da postagem:</strong>
                 {{ $post->corpo }}
             </div>
         </div>
@@ -42,18 +42,18 @@
             </div>
         </div>
 
-        <!-- //* Artista -->
+        <!-- //* Autor -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Artista:</strong>
+                <strong>Autor:</strong>
                 {{ $post->autor->nome }}
             </div>
         </div>
 
-        <!-- //* Local -->
+        <!-- //* Biografia -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Local:</strong>
+                <strong>Biografia:</strong>
                 {{ $post->biografia }}
             </div>
         </div>
