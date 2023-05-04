@@ -108,6 +108,8 @@ body {
             width:100%
         }
 
+
+
         .index-container {
   width: 100%;
   display: flex;
@@ -116,6 +118,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #000000;
+  color:white
 }
 .index-container1 {
   width: 565px;
@@ -131,9 +134,8 @@ body {
   display: flex;
   align-self: center;
   align-items: center;
-  border-color: #ffffff;
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius2);
+  /* border:1px solid white; 
+  border-radius: 10px; */
   flex-direction: column;
   justify-content: center;
 }
@@ -145,6 +147,7 @@ body {
   align-self: center;
   align-items: center;
   justify-content: center;
+  
 }
 .index-button {
   color: #ffffff;
