@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="home-container">
-<div class="fotinha"></div>
 <h1>Editar Post</h1>
 <div class="home-container1">
     
@@ -19,8 +18,9 @@
         <input type="input" name="corpo" class="form-control" placeholder="Conteúdo da postagem" maxlength="50">
     </div>
     <div class="width100">
-        <p>Foto:</p>
-        <input type="input" name="titulo" class="form-control" placeholder="Titulo" maxlength="50">
+        <p>Foto:</p> 
+        <!-- procurar input de foto -->
+        <input type="input"  class="form-control" placeholder="Titulo" maxlength="50">
     </div>
     <p>Data atual:</p>
 </div></div>
