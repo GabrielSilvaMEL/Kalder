@@ -7,7 +7,7 @@
     <div class="f">
       
       <h1 class="left">Sobre nós</h1>
-      <p>Bem-vindo ao Kalker Blog, seu destino número um para descobrir as últimas notícias e tendências no mundo da
+      <p>Bem-vindo ao Kalder Blog, seu destino número um para descobrir as últimas notícias e tendências no mundo da
         música! Criado em 24 de fevereiro de 2023, nosso blog é um espaço acolhedor e simples para aqueles que procuram
         se manter atualizados sobre o que está acontecendo no cenário musical atual.
         Embora sejamos um blog pequeno, nossa paixão pela música é grande. Nós nos dedicamos a trazer conteúdo de
