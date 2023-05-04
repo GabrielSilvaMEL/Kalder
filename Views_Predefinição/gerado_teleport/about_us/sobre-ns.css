@@ -1,0 +1,172 @@
+body {
+  background-image: linear-gradient(180deg, #20182a 0%, #070d0c 100%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/** GERAL */
+.sobre-ns-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sobre-ns-sobre-ns {
+    width: 100%;
+    height: 1667px;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
+  /** CONTATO */
+  .contato {
+    top: 1509px;
+    left: 0px;
+    width: 1922px;
+    height: 158px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: #000000;
+  }
+  .contato-heads {
+    color: #ffffff;
+    height: auto;
+    position: absolute;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    font-size: 36px;
+  }
+  .contato-div-right {
+    top: 14px;
+    left: 1004px;
+    width: 384px;
+    height: 129px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .contato-div-left {
+    top: 15px;
+    left: 533px;
+    width: 384px;
+    height: 129px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .contato-infos {
+    top: 49px;
+    color: rgba(172, 172, 172, 1);
+    width: 384px;
+    height: auto;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140.49999713897705%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  /** IMG */
+  .aboutus-imagem {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 620px;
+    position: absolute;
+  }
+
+  /** BODY */
+  .sobre-ns-corposobrens {
+    top: 280px;
+    left: 380px;
+    width: 1110px;
+    height: 1039px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, #00000021 0%, #150f1d00 10%);
+  }
+  .aboutus-title {
+    top: 30px;
+    left: 60px;
+    color: #ffffff;
+    height: auto;
+    position: absolute;
+    font-size: 36px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Open Sans;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    margin-bottom: 0px;
+    text-decoration: none;
+  }
+  .aboutus-span {
+    top: 97px;
+    left: 62px;
+    color: #ffffff;
+    width: 990px;
+    height: auto;
+    position: relative;
+    font-size: 24px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  /** NAVBAR */
+  .navbar {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 171px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-image: linear-gradient(180deg, #000000c9 0%, #00000000 100%, #ff000000 100%);
+  }
+  .navbar-span {
+    top: 122px;
+    color: #ffffff;
+    height: auto;
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .navbar-title {
+    font-family: 'Bebas Neue' !important;
+    top: 22px;
+    left: 819px;
+    color: #ffffff;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    font-size: 24px;
+  }
