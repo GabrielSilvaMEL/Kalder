@@ -1,12 +1,18 @@
+/** MODIFICAÇÕES BOOTSTRAP */
+.row {
+    --bs-gutter-x: 0;
+}
 
-
+/** GERAL */
 html {
     height: 100%;
     width: 100%;}
 
 body {
+    height: 100vh;
     background: #000000;
-    background: linear-gradient(180deg, #20182a 0%, #182b27 100%);}
+    background: linear-gradient(180deg, #20182a 0%, #182b27 100%);
+    background-repeat: no-repeat;}
 
 .dis-txt {
     user-select: none;}
@@ -16,7 +22,8 @@ body {
     background: #000000;
     background: linear-gradient(180deg, #00000063 0%, #00000000 60%);   
     --bs-bg-opacity: 0;
-    position: absolute;}
+    position: relative;
+    z-index: 2;}
 
 .navbar h1, .navbar a {
     color: white !important;}
@@ -38,8 +45,20 @@ body {
 /** BODY - SOBRE NÓS */
 .abtus_image {
     height: 280px;
+    top: 0;
     object-fit: cover;
-    object-position: 0 70%;}
+    object-position: 0 70%;
+    position: absolute;
+    z-index: 1;}
+
+.div-abtus {
+    position: relative;
+    z-index: 1;
+    top: 20px;
+    border-radius: 5px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, #353535 0%, transparent 50%);
+}
 
 /** FOOTER */
 .footer {
