@@ -97,6 +97,33 @@ body {
     border-radius: 5px;
 }
 
+/** BODY - HOME */
+.img-home {
+    height: 410px;
+    top: 0;
+    object-fit: cover;
+    object-position: 0 0%;
+    position: absolute;
+    z-index: 1;
+}
+
+.r-div {
+    position: relative;
+    z-index: 1;
+    top: 170px;
+    margin-bottom: 200px;
+}
+
+.c-div {
+    background: linear-gradient(180deg, #2d252e 0%, #1b2220 100%);
+    border-radius: 5px;
+    width: 550px;
+    height: 550px;
+    margin: 0;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
 /** FOOTER */
 .footer {
     position: absolute;
