@@ -38,7 +38,7 @@ body {
 }
 
 .navbar a {
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
     border-radius: 2px;
 }
 
@@ -85,7 +85,13 @@ body {
     top: 20px;
     border-radius: 5px;
     background: #000000;
-    background: linear-gradient(180deg, #353535 0%, transparent 50%);
+    background: linear-gradient(180deg, #000000 0%, #0000000f 90%);
+    transition: 0.2s;
+}
+
+.div-abtus:hover {
+    box-shadow: 10px 10px #ffffff;
+    border-radius: 0px;
 }
 
 /** BODY - POST */
@@ -117,11 +123,17 @@ body {
 .c-div {
     background: linear-gradient(180deg, #2d252e 0%, #1b2220 100%);
     border-radius: 5px;
-    width: 550px;
-    height: 550px;
+    width: 480px;
+    height: 400px;
     margin: 0;
     margin-right: auto!important;
     margin-left: auto!important;
+    transition: 0.2s;
+}
+
+.c-div:hover {
+    box-shadow: 0px 5px #afafaf;
+    border-radius: 0px;
 }
 
 /** FOOTER */
