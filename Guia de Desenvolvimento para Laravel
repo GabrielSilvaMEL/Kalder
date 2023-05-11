@@ -76,6 +76,9 @@
 - Atualizar/consertar/instalar "npm".
    > npm install
 
+- Atualizar/instalar "npm" para última versão
+   > npm install vite@latest
+
 - Deletar "node_modules/vendor/package-lock.json".
    > rm -rf node_modules
    > rm -rf vendor
