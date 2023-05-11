@@ -196,9 +196,17 @@
             <!--* content -->
             <div class="collapse navbar-collapse" style="justify-content:center;" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre Nós</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item {{ (Route::current()->getName() === 'site.about' ? ' active' : '') }}">
+                        <a class="nav-link" href="{{ route('site.about') }}">Sobre Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
                 </ul>
             </div>
         </div>

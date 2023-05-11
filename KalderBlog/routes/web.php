@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ use App\Http\Controllers\HomeController;
 
 //* Controllers das Views
 Route::get('/',[HomeController::class,'home'])->name('site.home');
+Route::get('/about',[AboutController::class,'about'])->name('site.about');
