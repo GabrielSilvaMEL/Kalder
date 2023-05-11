@@ -2,21 +2,28 @@
 
 @section('content')
 
-<img
-          alt="homeback510"
-          src="/playground_assets/homeback510-sgxg-600h.png"
-          class="home-homeback"
-        />
-<div class="home-group1">
-          <div class="home-post4"></div>
-          <div class="home-post3"></div>
-          <div class="home-post2"></div>
-          <div class="home-post1"></div>
+<img 
+  draggable="false"
+  src="https://images.pexels.com/photos/7971865/pexels-photo-7971865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+  alt=""
+  class="img-fluid img-home w-100"
+>
+
+<!--! body-home -->
+<div class="row r-div">
+    <div class="col"></div>
+
+    <div class="col-8">
+        <div class="row mb-5">
+            <div class="c-div"></div>
         </div>
-        <div class="home-navbar">
-          <span class="home-text14"><span>Perfil</span></span>
-          <span class="home-text16"><span>Sobre nós</span></span>
-          <span class="home-text18"><span>Home</span></span>
-          <span class="home-text20"><span>Kalder Blog</span></span>
+
+        <div class="row mb-5">
+            <div class="c-div"></div>
+        </div>
+    </div>
+
+    <div class="col"></div>
+</div>
 
 @endsection
