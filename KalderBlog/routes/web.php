@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +14,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('perfilmanager.index');
-});
-// Route::get('/',[HomeController::class,'home'])->name('site.home');
+// Route::get('/', function () {
+//     return view('perfilmanager.index');
+// });
+
+//* Controllers das Views
+Route::get('/',[HomeController::class,'home'])->name('site.home');

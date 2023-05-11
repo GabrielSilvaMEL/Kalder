@@ -1,213 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Kalder Blog | Bem-Vindo</title>
 
-    <!-- Css -->
-    <!-- @vite(['public/css/style.css'])
-    @vite(['public/css/custom.css']) -->
-
-    <!-- Favicon -->
-    <link rel="icon" href="{{ Vite::asset('resources/images/outros/sound.png') }}">
-    </link>
-    <!-- <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/146/146074.png"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
-    <!-- Font -->
+    <!-- Google-Fonts - Bebas Neue -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Google-Fonts - Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- CSS -->
+    @vite('resources/css/style.css')
+    @vite('resources/css/custom.css')
+
     <style>
+      /** MODIFICAÇÕES BOOTSTRAP */
+      .row {
+          --bs-gutter-x: 0;
+      }
+
+      /** GERAL */
       html {
-    height: 100%;
-}
-body {
-    background: #000000;
-    background: linear-gradient(180deg, #20182a 0%, #182b27 100%);
-}
+          height: 100%;
+          width: 100%;
+      }
 
-.dis-txt {
-    user-select: none;
-}
+      body {
+          background: #151817;
+          /* background-image: linear-gradient(180deg, #20182a 0%, #182b27 100%); */
+          background-repeat: no-repeat;
 
-/** NAVBAR */
-.navbar {
-    background: #000000;
-    background: linear-gradient(180deg, #00000063 0%, #00000000 60%);   
-    --bs-bg-opacity: 0;
-}
-.navbar h1, .navbar a {
-    color: white !important;
-}
+          position: relative;
+          margin: 0;
+          padding-bottom: 160px; /* altura do footer */
+          min-height: 100vh;
+      }
 
-.navbar a:hover {
-    text-shadow: 0px 15px 25px #ffffff;
-    transition: 0.3s;
-}
+      .dis-txt {
+          user-select: none;
+      }
 
-.navbar-title {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 48px;
-}
+      /** NAVBAR */
+      .navbar {
+          background: #000000;
+          background: linear-gradient(180deg, #00000063 0%, #00000000 60%);   
+          --bs-bg-opacity: 0;
+          position: relative;
+          z-index: 2;
+      }
 
-/** BODY */
-.image-custom {
-    width: 200px;
-    height: auto;
-    border-radius: 292px;
-}
+      .navbar h1, .navbar a {
+          color: white !important;
+      }
 
-/** FOOTER */
-.footer {
-    
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #000000;
-}
-.footer h4 {
-    color:white;
-    font-weight: 400;
-}
-.footer p {
-    color: #ACACAC;
-}
+      .navbar a {
+          transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+          border-radius: 2px;
+      }
 
+      .navbar a:hover {
+          box-shadow: inset 100px 0 0 0 #ffffff;
+          color: #000000 !important;
+      }
 
-        .home-container {
-        width: 100%;
-        display: flex;
-        overflow: auto;
-        min-height: 100vh;
-        align-items: center;
-        flex-direction: column;
-        background-color: #000000;
-        color:white;
-        
-        }
-        .home-container1 {
-        width: 457px;            
-        height: 999px;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        gap:20px;
-        }
-        .fotinha {
-            width: 202px;
-            border: 2px solid white;
-            border-radius:100px;
-            height: 200px;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-        .width100{
-            width:100%
-        }
+      .navbar h1:hover {
+          transition: 0.3s;
+          text-shadow: 0px 10px 30px #ffffff81;
+      }
 
+      .navbar-title {
+          font-family: 'Bebas Neue', cursive;
+          font-size: 48px;
+      }
 
+      /** BODY - PERFIL ||*/
+      .image-custom {
+          width: 200px;
+          height: auto;
+          border-radius: 292px;
+      }
 
-        .index-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  background-color: #000000;
-  color:white
-}
-.index-container1 {
-  width: 565px;
-  height: 978px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.index-container2 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: 254px;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  /* border:1px solid white; 
-  border-radius: 10px; */
-  flex-direction: column;
-  justify-content: center;
-}
-.index-container3 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  
-}
-.index-button {
-  color: #ffffff;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: #06a11a;
-}
-.index-button1 {
-  color: #ffffff;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: #b90707;
-}
-.index-container4 {
-  width: 100%;
-  height: 179px;
-  display: flex;
-  align-items: flex-start;
-  border:2px solid white;
-  border-radius:10px;
-  padding:10px;
-  
-}
-.index-container5 {
-  flex: 0 0 auto;
-  width: 129px;
-  height: 189px;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap:2px
-}
+      .image-custom:hover {
+          transition: 0.3s;
+          text-shadow: 0px 10px 30px #ffffffd3;
+      }
 
-.index-image {
-  margin-top:10px;
-  width:70%;
-  height: 40%;
-  align-self: flex;
-  object-fit: cover;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: 50%;
-}
-.index-container6 {
-  flex: 0 0 auto;
-  width: 441px;
-  
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
+      /** BODY - SOBRE NÓS */
+      .abtus_image {
+          height: 280px;
+          top: 0;
+          object-fit: cover;
+          object-position: 0 70%;
+          position: absolute;
+          z-index: 1;
+      }
 
+      .div-abtus {
+          position: relative;
+          z-index: 1;
+          top: 20px;
+          border-radius: 5px;
+          background: #000000;
+          background: linear-gradient(180deg, #000000 0%, #0000000f 90%);
+          transition: 0.2s;
+      }
 
-    </style> 
-    </head>
+      .div-abtus:hover {
+          box-shadow: 10px 10px #ffffff;
+          border-radius: 0px;
+      }
 
-  <body style="background-color:black">
-    <!-- NavBar -------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      /** BODY - POST */
+      .img-post {
+          height: 400px;
+          width: 800px;
+          object-fit: cover;
+          object-position: 0 70%;
+          border-radius: 5px;
+      }
+
+      /** BODY - HOME */
+      .img-home {
+          height: 410px;
+          top: 0;
+          object-fit: cover;
+          object-position: 0 0%;
+          position: absolute;
+          z-index: 1;
+      }
+
+      .r-div {
+          position: relative;
+          z-index: 1;
+          top: 170px;
+          margin-bottom: 170px;
+      }
+
+      .c-div {
+          background: linear-gradient(180deg, #2d252e 0%, #1b2220 100%);
+          border-radius: 5px;
+          width: 1090px;
+          height: 400px;
+          margin: 0;
+          margin-right: auto!important;
+          margin-left: auto!important;
+          transition: 0.2s;
+      }
+
+      .c-div:hover {
+          box-shadow: 0px 5px #afafaf;
+          border-radius: 0px;
+      }
+
+      /** FOOTER */
+      .footer {
+          position: absolute;
+          z-index: 2;
+          bottom: 0;
+          width: 100%;
+          height: 110px;
+          background-color: #000000;
+      }
+
+      .footer h4 {
+          color:white;
+          font-weight: 400;
+      }
+
+      .footer p {
+          color: #ACACAC;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--! navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
         <div class="container-fluid" style="display:block;">
 
             <!--* head -->
@@ -229,34 +204,28 @@ body {
         </div>
     </nav>
 
-    <!-- Main -->
+    <!--! Main -->
     <main role="main">
         @yield('content')
     </main>
 
-    <div class="footer pt-3">
-        <div class="mt-3 row">
-            <div class="col-6 text-end">
+    <!--! footer -->
+    <div class="footer">
+        <div class="pt-2 row">
+            <div class="col me-4 text-end">
                 <h4 class="dis-txt">Pres. Prudente</h4>
                 <p class="mb-0">Rua Cidade Azul, 1945</p>
                 <p>Jardim Brasil</p>
             </div>
-            <div class="col-6 text-start">
+            <div class="col text-start">
                 <h4 class="dis-txt">Contato</h4>
                 <p class="mb-0">+55 (18) 98805-8371</p>
                 <p>kalderblog@gmail.com</p>
             </div>
         </div>
     </div>
-    <!-- Boot -------------------------------------------------------->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
   </body>
 </html>
