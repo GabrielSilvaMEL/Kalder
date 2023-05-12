@@ -205,7 +205,20 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
+                        <a class="nav-link" href="{{ route('site.autor') }}">Perfil</a>
+                    </li>
+
+
+
+                    <!-- A ser apagado. Criado afim de testes -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('autoresmanager.create') }}">autorcreate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('autoresmanager.index') }}">autorindex</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('autoresmanager.create') }}">autorstore</a>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,59 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Autor;
+class AutoresManagerController extends Controller
+{
+    public function index()
+    {
+        $autores = Autor::latest()->paginate(5);
+
+        return view('autoresmanager.index',compact('autores'))
+                    ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
+    // * CREATE ---------------------------------|
+    public function create()
+    {
+        return view('autoresmanager.create');
+    }
+
+    // * STORE ---------------------------------|
+    public function store(Request $request)
+    {
+        $request->validate([
+            'nome' => 'required',
+            'biografia' => 'required',
+            'imagem' => 'required',
+            'email' => 'required',
+            'senha' => 'required',
+        ]);
+
+        // Artista::create($request->all());
+
+        // Requisitar os campos no cadastro
+        $autor = new Autor;
+        $autor->nome = $request->nome; #obrigatório
+        $autor->biografia = $request->biografia; #obrigatório
+        $autor->imagem = ""; #opcional
+        $dirImage = "images/autores";
+
+        if($request->hasFile('imagem') && $request->file('imagem')->isValid()){
+            $requestImage = $request->imagem;
+            $extension = $requestImage->extension();
+
+            // Hash para gerar nome da imagem com data e hora. (Não difere dos outros arquivos)
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime('now')) . "." . $extension;
+            
+            // Mover a imagem
+            $requestImage->move(public_path($dirImage), $imageName);
+            $autor->imagem = $dirImage . "/" . $imageName;
+        };
+
+        $autor->save();
+
+        return redirect()->route('autoresmanager.index')->with('success','Autor cadastrado com sucesso!');
+    }
+}
