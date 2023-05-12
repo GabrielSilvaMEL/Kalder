@@ -11,8 +11,9 @@ class Autor extends Model
     protected $fillable = [
         'nome',
         'biografia',
-        'foto',
+        'imagem',
         'email',
         'senha',
     ];
+    
 }

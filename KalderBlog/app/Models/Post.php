@@ -16,4 +16,7 @@ class Post extends Model
         'foto',
         'autor',
     ];
+    public function autor(){
+        return $this->belongsTo(Autor::class);
+    } //afim de teste pode ser apagado
 }
