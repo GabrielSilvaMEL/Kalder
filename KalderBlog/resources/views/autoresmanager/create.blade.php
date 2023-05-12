@@ -6,6 +6,8 @@
         <h1>Criar post</h1>
     </center>
         
+   <!-- PAGINA NAO FUNCIONARÁ ATÉ A CRIAÇÃO DO BANCO DE DADOS -->
+
     <form style="margin: 0 auto;">
 
         <div class="width100">
