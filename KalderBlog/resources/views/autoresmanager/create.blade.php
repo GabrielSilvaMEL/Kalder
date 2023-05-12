@@ -6,7 +6,7 @@
         <h1>Criar post</h1>
     </center>
         
-
+<!-- 70% Pronto. Faltando add imagem, e-mail e senha     -->
     <form style="margin: 0 auto;">
 
         <div class="width100">
