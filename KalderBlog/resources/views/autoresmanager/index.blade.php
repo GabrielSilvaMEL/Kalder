@@ -2,10 +2,15 @@
 
 @section('content')
 <center>
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <h1>Autores Cadastrados</h1>
+
+
+
+
+<!-- PAGINA NAO FUNCIONARÁ ATÉ A CRIAÇÃO DO BANCO DE DADOS -->
+<div class="index-container">
+    <div class="index-container1">
+      <div class="index-container2">
+        <h1>Perfis Cadastrados</h1>
         <div class="index-container3">
           <a class="btn btn-primary" href="{{ route('autoresmanager.create') }}">Cadastrar Novo</a>
         </div>
