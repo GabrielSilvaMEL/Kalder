@@ -1,7 +1,9 @@
 @extends('site.layout')
 
 @section('content')
-<div class="text-center mx-auto text-white">
+
+<!--! body-perfil -->
+<div class="mt-5 text-center mx-auto text-white">
         <h3>John Doe</h3>
         <p>johndoe@email.com</p>
 
@@ -12,7 +14,7 @@
             class="image-custom img-fluid mt-2"
         />
 
-        <p class="mx-auto mt-4" style="width: 30%;">
+        <p class="mx-auto mt-4" style="width: 40%;">
             Olá, eu sou John Doe, o blogger 
             de música do blog Kalder. Desde 
             que me entendo por gente, a 
@@ -24,4 +26,5 @@
             musicais.
         </p>
     </div>
-  @endsection
+
+@endsection
