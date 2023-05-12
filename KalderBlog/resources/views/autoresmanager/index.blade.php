@@ -3,10 +3,8 @@
 @section('content')
 <center>
 
-
-
-
 <!-- PAGINA NAO FUNCIONARÁ ATÉ A CRIAÇÃO DO BANCO DE DADOS -->
+
 <div class="index-container">
     <div class="index-container1">
       <div class="index-container2">
