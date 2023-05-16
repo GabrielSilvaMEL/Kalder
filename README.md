@@ -1,6 +1,7 @@
 # Kalder Blog
 > Projeto de desenvolvimento de aplicação web em Laravel.
 
+
 ### O Projeto
 Desenvolvimento em Laravel de um blog robusto com recursos como gerenciamento de postagens, comentários, e uma página de autor. 
 Adicionar recursos de segurança, como autenticação e autorização, para gerenciamento de usuários.
