@@ -13,8 +13,8 @@ class Post extends Model
         'tituloresumido',
         'corpo',
         'datapub',
-        'foto',
-        'autor',
+        'imagem',
+        'autor_id', 
     ];
     public function autor(){
         return $this->belongsTo(Autor::class);
