@@ -136,6 +136,19 @@ body {
     border-radius: 0px;
 }
 
+/* AUTORES */
+.img-autores {
+    object-fit: cover;
+    border-radius: 250px;
+    height: 250px;
+    width: 250px;   
+}
+
+.div-autores {
+    background: linear-gradient(-90deg, #171717 0%, #472363 100%);
+    border-radius: 5px;
+}
+
 /** FOOTER */
 .footer {
     position: absolute;
