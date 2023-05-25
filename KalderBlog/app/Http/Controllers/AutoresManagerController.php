@@ -51,9 +51,45 @@ class AutoresManagerController extends Controller
             $requestImage->move(public_path($dirImage), $imageName);
             $autor->imagem = $dirImage . "/" . $imageName;
         };
+        
+
+
 
         $autor->save();
 
         return redirect()->route('autoresmanager.index')->with('success','Autor cadastrado com sucesso!');
+    }
+    public function edit($id)
+    {
+        $autor = Autor::findOrFail($id);
+
+        return view('autoresmanager.edit',compact('autor'));
+    }
+
+    // * UPDATE ---------------------------------|
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'nome' => 'required',
+            'biografia' => 'required',
+            'descabreviada' => 'required',
+            'imagem' => 'required',
+            'email' => 'required',
+        ]);
+
+        $data = $request->all();
+        
+        Autor::findOrFail($id)->update($data);
+
+        return redirect()->route('autoresmanager.index')->with('success','Cadastro de autor atualizado com sucesso!');
+    }
+
+
+    // * DESTROY ---------------------------------|
+    public function destroy($id)
+    {
+        Autor::findOrFail($id)->delete();
+
+        return redirect()->route('autoresmanager.index')->with('success','Cadastro de autor excluido com sucesso!');
     }
 }
