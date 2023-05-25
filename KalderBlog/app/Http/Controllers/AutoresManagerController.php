@@ -26,18 +26,21 @@ class AutoresManagerController extends Controller
         $request->validate([
             'nome' => 'required',
             'biografia' => 'required',
+            'descabreviada' => 'required',
             'imagem' => 'required',
             'email' => 'required',
-            'senha' => 'required',
+            
         ]);
 
         // Artista::create($request->all());
 
         // Requisitar os campos no cadastro
         $autor = new Autor;
-        $autor->nome = $request->nome; #obrigatório
+        $autor->nome = $request->nome;
+        $autor->descabreviada = $request->descabreviada; #obrigatório
         $autor->biografia = $request->biografia; #obrigatório
         $autor->imagem = ""; #opcional
+        $autor->email = "";
         $dirImage = "images/autores";
 
         if($request->hasFile('imagem') && $request->file('imagem')->isValid()){
@@ -84,6 +87,15 @@ class AutoresManagerController extends Controller
         return redirect()->route('autoresmanager.index')->with('success','Cadastro de autor atualizado com sucesso!');
     }
 
+    
+
+    // * SHOW ---------------------------------|
+    public function show($id)
+    {
+        $autor = Autor::findOrFail($id);
+
+        return view('autoresmanager.show',compact('autor'));
+    }
 
     // * DESTROY ---------------------------------|
     public function destroy($id)
