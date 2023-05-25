@@ -29,4 +29,5 @@ Route::get('/about',[AboutController::class,'about'])->name('site.about');
 Route::get('/post',[PostagemController::class,'postagem'])->name('site.postagem');
 Route::get('/autor',[AutorController::class,'autor'])->name('site.autor');
 
+Route::get('/autores',[AutoresController::class,'autor'])->name('site.autor');
 Route::resource('autoresmanager',AutoresManagerController::class);

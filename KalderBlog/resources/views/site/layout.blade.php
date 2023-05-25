@@ -59,9 +59,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('autoresmanager.index') }}">autorindex</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('autoresmanager.create') }}">autorstore</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
