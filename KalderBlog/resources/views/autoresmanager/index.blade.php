@@ -1,36 +1,55 @@
 @extends('site.layout')
 
 @section('content')
-<center>
+
 
 <!-- PAGINA NAO FUNCIONARÁ ATÉ A CRIAÇÃO DO BANCO DE DADOS -->
+<div class="jumbotron">
+    <h1 class="display-4 white">Cadastro de Autores</h1>
+    <hr class="my-4">
+</div>
+<div class="container">
+  
+    <a class="btn btn-success" href="{{ route('autoresmanager.create') }}">Cadastrar Artista</a>
+    <p></p>
+    @if ($message = Session::get('success'))
+        <p></p>
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
+    @endif
+<table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Imagem</th>
+            <th width="280px">Ação</th>
+        </tr>
+        @foreach ($autores as $autor)
+        <tr>
+            <td>{{ ++$i }}</td>
+            <td>{{ $autor->nome }}</td>
+            <td>{{ $autor->imagem }}</td>
+            <td>
+                <form action="{{ route('autoresmanager.destroy', $autor->id) }}" method="POST">
 
-<div class="index-container">
-    <div class="index-container1">
-      <div class="index-container2">
-        <h1>Perfis Cadastrados</h1>
-        <div class="index-container3">
-          <a class="btn btn-primary" href="{{ route('autoresmanager.create') }}">Cadastrar Novo</a>
-        </div>
-      </div>
-      <div class="index-container4">
-        <div class="index-container5" action="{{ route('autoresmanager.destroy', $autor->id) }}" method="POST">
-          <img
-            alt="image"
-            src="https://play.teleporthq.io/static/svg/default-img.svg"
-            class="index-image"
-          />
-          <button class="btn btn-primary" href="{{ route('autoresmanager.show', $autor->id) }}">Exibir</button>
-          <button type="submit" class="btn btn-danger">Excluir</button>
-        </div>
-        <div class="index-container6">
-          <p>Nome:</p> {{ $autor->nome }}
-          <p>Biografia:</p> {{ $autor->biografia }}
-        </div>
-      </div>
-    </div>
-  </div>
+                    <a class="btn btn-info" href="{{ route('autoresmanager.show', $autor->id) }}">Exibir</a>
 
-</center>  
+                    <a class="btn btn-primary" href="{{ route('autoresmanager.edit', $autor->id) }}">Editar</a>
+
+                    @csrf
+                    @method('DELETE')
+
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </form>
+            </td>
+        </tr>
+        @endforeach
+    </table>
+
+    {!! $autores->links() !!}
+
+
+
 
 @endsection
