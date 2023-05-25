@@ -31,7 +31,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nome:</strong>
-                    <input type="input" name="nome_artistico" value="{{ $autor->nome_artistico }}" class="form-control" placeholder="Nome" maxlength="50">
+                    <input type="input" name="nome" value="{{ $autor->nome_artistico }}" class="form-control" placeholder="Nome" maxlength="50">
                 </div>
             </div>
 
@@ -39,7 +39,14 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Biografia:</strong>
-                    <textarea class="form-control" style="height:150px" name="descricao" placeholder="Descrição" maxlength="500">{{ $autor->biografia }}</textarea>
+                    <textarea class="form-control" style="height:150px" value="{{ $autor->biografia }}" name="biografia" placeholder="Descrição" maxlength="500">{{ $autor->biografia }}</textarea>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Descrição abreviada:</strong>
+                    <textarea class="form-control" value="{{ $autor->descabreviada }}" style="height:50px" name="descabreviada" placeholder="Descrição" maxlength="500">{{ $autor->biografia }}</textarea>
                 </div>
             </div>
 
@@ -50,6 +57,13 @@
                     <input type="text" name="imagem" value="{{ $autor->imagem }}" class="form-control">
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>E-mail:</strong>
+                    <input type="email" name="email" value="{{ $autor->email}}" class="form-control">
+                </div>
+            </div>
+
 
             <!-- //? Atualizar -->
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
