@@ -8,6 +8,7 @@ use App\Http\Controllers\PostagemController;
 use App\Http\Controllers\AutorController;
 use App\Http\Controllers\AutoresController;
 use App\Http\Controllers\AutoresManagerController;
+use App\Http\Controllers\PostsManagerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,6 @@ Route::get('/autor',[AutorController::class,'autor'])->name('site.autor');
 Route::get('/autores',[AutoresController::class,'autores'])->name('site.autores');
 
 Route::resource('autoresmanager',AutoresManagerController::class);
+
+//* Shows
+Route::resource('postsmanager',PostsManagerController::class); //CRUD shows
