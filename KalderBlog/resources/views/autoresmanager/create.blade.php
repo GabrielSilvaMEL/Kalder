@@ -5,10 +5,9 @@
     <center>
         <h1>Cadastrar Autor</h1>
     </center>
-    <div class="jumbotron">
-    </div>
+    
     <hr class="my-4">
-</div>
+
 <div class="container">
      
     @if ($errors->any())
@@ -26,17 +25,22 @@
     <form action="{{ route('autoresmanager.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
         <div class="width100">
-            <p>Nome:</p>
+        <strong>Nome:</strong>
             <input type="input" name="nome" class="form-control" placeholder="Nome do autor" maxlength="50">
         </div>
+        <br>
         <div class="width100">
-            <p>Descrição abreviada:</p>
+        <strong>Descrição abreviada:</strong>
             <input type="input" name="descabreviada" class="form-control" placeholder="Nome do autor" maxlength="50">
         </div>
+        <br>
+
         <div class="width100">
-            <p>Biografia:</p>
+        <strong>Biografia:</strong>
             <input type="input" name="biografia" class="form-control" placeholder="Biografia" maxlength="30">
         </div>
+        <br>
+
         <!-- //* Imagem -->
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
@@ -44,8 +48,10 @@
                     <input type="file" name="imagem" class="form-control" placeholder="Imagem">
                 </div>
             </div>
+            <br>
+
         <div class="width100">
-            <p>E-mail:</p>
+        <strong>E-mail:</strong>
             <input type="email" name="email" class="form-control" placeholder="nome@email.com" maxlength="50">
         </div>
         
@@ -60,7 +66,7 @@
     </form>
     </div>
 
-    
+</div>  
 </div>
 
 
