@@ -1,28 +1,73 @@
 @extends('site.layout')
 
 @section('content')
-
-<div class="home-container">
-<div class="home-container1">
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 40%;">
+    <center>
+        <h1>Cadastrar Post</h1>
+    </center>
     
-    <div class="width100">
-        <p>Título:</p>
-        <input type="input" name="titulo" class="form-control" placeholder="Titulo" maxlength="50">
+    <hr class="my-4">
+
+<div class="container">
+     
+    @if ($errors->any())
+        <p></p>
+        <div class="alert alert-danger">
+            <strong>Ops!</strong> Houve algum problema com a entrada de dados.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+        
+    <form action="{{ route('postsmanager.store') }}" method="POST" enctype="multipart/form-data">
+    @csrf
+        <div class="width100">
+        <strong>Título:</strong>
+            <input type="input" name="titulo" class="form-control" placeholder="Nome do post" maxlength="50">
+        </div>
+        <br>
+
+        <div class="width100">
+        <strong>Titulo Resumido:</strong>
+            <input type="input" name="tituloresumido" class="form-control" placeholder="Titulo resumido" maxlength="50">
+        </div>
+        <br>
+
+        <div class="width100">
+        <strong>Corpo:</strong>
+            <input type="input" name="corpo" class="form-control" placeholder="Corpo do post" maxlength="50">
+        </div>
+        <br>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Imagem:</strong>
+                <input type="file" name="imagem" class="form-control" placeholder="Imagem">
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Data:</strong>
+                <input type="input" name="imagem" class="form-control" placeholder="Imagem">
+            </div>
+        </div>
+        <hr class="my-4">
+
+        <!-- //? Cadastrar -->
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a class="btn btn-primary" href="{{ route('autoresmanager.index') }}"> Voltar</a>
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    
+            </div>
+    </form>
     </div>
-    <div class="width100">
-        <p>Título Resumido:</p>
-        <input type="input" name="tituloresumido" class="form-control" placeholder="Max 30 Caracteres" maxlength="30">
-    </div>
-    <div class="width100">
-        <p>Corpo:</p>
-        <input type="input" name="corpo" class="form-control" placeholder="Conteúdo da postagem" maxlength="50">
-    </div>
-    <div class="width100">
-        <p>Foto:</p>
-        <input type="input" name="titulo" class="form-control" placeholder="Titulo" maxlength="50">
-    </div>
-    <p>Data atual:</p>
-</div></div>
+
+</div>  
+</div>
 
 
 
