@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" style="justify-content:center;" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('site.home') }}">Home</a>
                     </li>
 
                     <li class="nav-item {{ (Route::current()->getName() === 'site.about' ? ' active' : '') }}">
@@ -58,6 +58,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('autoresmanager.index') }}">autorindex</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('postsmanager.create') }}">postscreate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('postsmanager.index') }}">postsindex</a>
                     </li>
                     
                 </ul>
