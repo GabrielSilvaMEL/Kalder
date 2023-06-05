@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Autor;
 use App\Models\Post;
 
+
 class PostsManagerController extends Controller
 {
     // * INDEX ---------------------------------|
@@ -32,7 +33,7 @@ class PostsManagerController extends Controller
             'tituloresumido' => 'required',
             'corpo' => 'required',
             'datapub' => 'required',
-            'imagem' => 'required',          
+            'imagem',          
             'autor_id' => 'required',
             
         ]);
@@ -45,7 +46,7 @@ class PostsManagerController extends Controller
       $post->tituloresumido = $request->tituloresumido;
       $post->corpo = $request->corpo;
       $post->datapub = $request->datapub;
-      $post->autor_id = $request->autor_id;
+      $post->autor_id = $request->autor_id;    
       $post->imagem = ""; #opcional
         $dirImage = "images/posts";
 

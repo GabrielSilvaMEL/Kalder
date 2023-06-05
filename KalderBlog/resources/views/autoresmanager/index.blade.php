@@ -18,7 +18,7 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-<table class="table table-bordered">
+        <table class="table table-bordered">
         <tr>
             <th>#</th>
             <th>Nome</th>

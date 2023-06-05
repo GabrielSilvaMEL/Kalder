@@ -47,8 +47,8 @@
                     <strong>Imagem:</strong>
                     <input type="file" name="imagem" class="form-control" placeholder="Imagem">
                 </div>
-            </div>
-            <br>
+        </div>
+        <br>
 
         <div class="width100">
         <strong>E-mail:</strong>
