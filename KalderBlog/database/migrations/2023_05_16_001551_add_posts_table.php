@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string("titulo", 90);
-            $table->string("tituloresumido", 50);
-            $table->string("corpo", 50);
+            $table->string("titulo", 300);
+            $table->string("tituloresumido", 200);
+            $table->string("corpo", 10000);
             $table->string("datapub", 100);
             $table->string('imagem');
             $table->foreignId('autor_id')->constrained('autores');

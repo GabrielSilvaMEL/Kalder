@@ -14,14 +14,13 @@ return new class extends Migration
         Schema::create('autores', function (Blueprint $table) {
             $table->id();
             $table->string("nome", 90);
-            $table->string("biografia", 200);
+            $table->string("biografia", 2000);
             $table->string("email", 50);
             $table->string("descabreviada",100);
             $table->string('imagem');
             $table->timestamps();
         });
     }
-
 
     /**
      * Reverse the migrations.
