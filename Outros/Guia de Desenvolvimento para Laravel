@@ -83,6 +83,7 @@
    > rm -rf node_modules
    > rm -rf vendor
    > rm -f package-lock.json
+   # Remove-Item -Path arquivo/diretorio -Force -Recurse
 
 - Limpar cache "npm".
    > npm cache clean --force
