@@ -30,14 +30,14 @@
         </div>
         <br>
         <div class="width100">
-        <strong>Descrição abreviada:</strong>
+        <strong>Profissão:</strong>
             <input type="input" name="descabreviada" class="form-control" placeholder="Nome do autor" maxlength="50">
         </div>
         <br>
 
         <div class="width100">
         <strong>Biografia:</strong>
-            <input type="input" name="biografia" class="form-control" placeholder="Biografia" maxlength="30">
+            <textarea type="texta" name="biografia" class="form-control" placeholder="Biografia" maxlength="2000"></textarea>
         </div>
         <br>
 
