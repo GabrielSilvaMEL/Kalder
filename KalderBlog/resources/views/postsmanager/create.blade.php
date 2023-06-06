@@ -26,19 +26,19 @@
     @csrf
         <div class="width100">
         <strong>Título:</strong>
-            <input type="input" name="titulo" class="form-control" placeholder="Título do post" maxlength="50">
+            <input type="input" name="titulo" class="form-control" placeholder="Título do post" maxlength="300">
         </div>
         <br>
 
         <div class="width100">
         <strong>Titulo Resumido:</strong>
-            <input type="input" name="tituloresumido" class="form-control" placeholder="Titulo resumido" maxlength="50">
+            <input type="input" name="tituloresumido" class="form-control" placeholder="Titulo resumido" maxlength="200">
         </div>
         <br>
 
         <div class="width100">
         <strong>Corpo:</strong>
-            <input type="input" name="corpo" class="form-control" placeholder="Corpo do post" maxlength="50">
+            <textarea type="input" name="corpo" class="form-control" placeholder="Corpo do post" maxlength="10000"></textarea>
         </div>
         <br>
         
