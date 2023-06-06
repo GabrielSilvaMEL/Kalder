@@ -1,30 +1,104 @@
 @extends('site.layout')
 
 @section('content')
-<div class="home-container">
-<h1>Editar Post</h1>
-<div class="home-container1">
-    
-    <div class="width100">
-        <p>Título:</p>
-        <input type="input" name="titulo" class="form-control" placeholder="Titulo" maxlength="50">
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 90%;">
+    <center>
+        <h1>Editar Post </h1>
+    </center>
+    <hr class="my-4">
+    @if ($errors->any())
+    <p></p>
+    <div class="alert alert-danger">
+        <strong>Ops!</strong> Houve algum problema com a entrada de dados.<br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
     </div>
-    <div class="width100">
-        <p>Título Resumido:</p>
-        <input type="input" name="tituloresumido" class="form-control" placeholder="Max 30 Caracteres" maxlength="30">
-    </div>
-    <div class="width100">
-        <p>Corpo:</p>
-        <input type="input" name="corpo" class="form-control" placeholder="Conteúdo da postagem" maxlength="50">
-    </div>
-    <div class="width100">
-        <p>Foto:</p> 
-        <!-- procurar input de foto -->
-        <input type="input"  class="form-control" placeholder="Titulo" maxlength="50">
-    </div>
-    <p>Data atual:</p>
-</div></div>
+    @endif
 
+    <form action="{{ route('postsmanager.update', $post) }}" method="POST">
+        @csrf
+        @method('PUT')
+
+        <div class="row">
+
+            <!-- //* Nome -->
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Titulo:</strong>
+                    <input type="input" name="titulo" class="form-control" value="{{ $post->titulo }}" maxlength="100">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Titulo Resumido:</strong>
+                    <input type="input" name="tituloresumido" class="form-control" value="{{ $post->tituloresumido }}" maxlength="100">
+                </div>
+            </div>
+
+            
+            <!-- //* Descricao -->
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Corpo:</strong>
+                    <input type="input" name="corpo" class="form-control" value="{{ $post->corpo}}" maxlength="200">
+                </div>
+            </div>
+
+            
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Data de Publicação:</strong>
+                    <input type="input" Readonly name="datapub" class="form-control" value="{{ $post->datapub  }}">
+                </div>
+            </div>
+
+           
+            <!-- //* Autor -->
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Autor: </strong>
+                    <select class="form-control" type="input" name="autor_id">
+                        @foreach ($autores as $autor)
+                        <option value="{{ $autor->id }}">{{ $autor->nome }}</option>
+
+                        @endforeach
+                    </select>
+
+                    <select class="form-control" type="input" name="nome" hidden>
+                        @foreach ($autores as $autor)
+                        <option value="{{ $autor->nome }}" hidden>{{ $autor->nome }}</option>
+
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+
+           
+
+            <!-- //* Imagem -->
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Imagem:</strong>
+                    <input type="text" name="imagem" value="{{ $post->autor->imagem }}" class="form-control mb-2" placeholder="Imagem">
+                </div>
+            </div>
+
+            
+        </div>
+
+    </form>
+    <center>
+        <!-- //? Atualizar -->
+       
+                <button type="submit" class="btn btn-primary">Atualizar</button>
+         
+        <a class="btn btn-primary" href="{{ route('postsmanager.index') }}"> Voltar</a>
+    </center>
+</div>
 
 
 @endsection

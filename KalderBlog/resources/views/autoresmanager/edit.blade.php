@@ -2,10 +2,11 @@
 
 @section('content')
 
-<div class="jumbotron">
-    <h1 class="display-4">Editar Cadastro de autor</h1>
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 90%;">
+    <center>
+        <h1>Cadastro de Autores</h1>
+    </center>
     <hr class="my-4">
-</div>
 <div class="container">
     <a class="btn btn-primary" href="{{ route('autoresmanager.index') }}"> Voltar</a>
     <p></p>

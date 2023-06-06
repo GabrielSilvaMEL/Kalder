@@ -1,15 +1,14 @@
 @extends('site.layout')
 
 @section('content')
-<div class="jumbotron">
-    <h1 class="display-4">Post</h1>
+
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 90%;">
+    <center>
+        <h1>Cadastrar Post</h1>
+    </center>
+    
     <hr class="my-4">
-</div>
-<div class="container">
-    <a class="btn btn-primary" href="{{ route('autormanager.index') }}"> Voltar</a>
-    <p></p>
-    <div class="row">
-        
+   
         <!-- titulo -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -65,6 +64,14 @@
                 {{ $post->autor->foto }}
             </div>
         </div>
-    </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>autorid:</strong>
+                {{ $post->autor_id }}
+            </div>
+        </div>
+    <center>
+        <a class="btn btn-primary" href="{{ route('postsmanager.index') }}"> Voltar</a>
+    </center>
 </div>
 @endsection

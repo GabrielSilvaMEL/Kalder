@@ -68,11 +68,11 @@ class PostsManagerController extends Controller
     }
 
     // * SHOW ---------------------------------|
-    public function post($id)
+    public function show($id)
     {
       $post = Post::findOrFail($id);
 
-        return view('postmanager.show',compact('post'));
+        return view('postsmanager.show',compact('post'));
     }
 
     // * EDIT ---------------------------------|

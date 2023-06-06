@@ -26,7 +26,7 @@
     @csrf
         <div class="width100">
         <strong>Título:</strong>
-            <input type="input" name="titulo" class="form-control" placeholder="Nome do post" maxlength="50">
+            <input type="input" name="titulo" class="form-control" placeholder="Título do post" maxlength="50">
         </div>
         <br>
 
@@ -48,6 +48,7 @@
                 <input type="file" name="imagem" class="form-control" placeholder="Imagem">
             </div>
         </div>
+        <br>
         <!-- //* Autor -->
         <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
@@ -69,8 +70,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                linksglobal.com.br/agendamento-sistema-inscricoes
-                div
+                
                 <strong>Data de publicação:</strong>
                 <p>{{ date('Y-m-d') }}</p>
                 <input type="input" value="{{ date('Y-m-d') }}" name="datapub" class="form-control" hidden>
@@ -82,9 +82,9 @@
         <!-- //? Cadastrar -->
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
             <a class="btn btn-primary" href="{{ route('autoresmanager.index') }}"> Voltar</a>
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
+            <button type="submit" class="btn btn-success">Cadastrar</button>
                     
-            </div>
+        </div>
     </form>
     </div>
 

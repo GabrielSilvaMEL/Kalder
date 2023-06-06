@@ -3,13 +3,13 @@
 @section('content')
 
 
-<!-- PAGINA NAO FUNCIONARÁ ATÉ A CRIAÇÃO DO BANCO DE DADOS -->
-<div class="jumbotron">
-    <h1 class="display-4 white">Cadastro de Autores</h1>
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 90%;">
+    <center>
+        <h1>Cadastro de Autores</h1>
+    </center>
     <hr class="my-4">
-</div>
-<div class="container">
-  
+
+
     <a class="btn btn-success" href="{{ route('autoresmanager.create') }}">Cadastrar Artista</a>
     <p></p>
     @if ($message = Session::get('success'))
@@ -18,7 +18,7 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-        <table class="table table-bordered">
+        <table class="table table-bordered" style="color:white">
         <tr>
             <th>#</th>
             <th>Nome</th>
@@ -49,7 +49,13 @@
 
     {!! $autores->links() !!}
 
+    <div>
+        <center>
 
-
+            <a class="btn btn-success" href="{{ route('autoresmanager.create') }}">Cadastrar novo Autor</a>
+            <a class="btn btn-primary" href="{{ route('site.autores') }}"> Voltar</a>
+        </center>
+    </div>
+</div>
 
 @endsection
