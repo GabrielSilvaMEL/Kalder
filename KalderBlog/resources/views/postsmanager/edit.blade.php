@@ -87,14 +87,18 @@
                 </div>
             </div>
 
-            <!-- //? Atualizar -->
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Atualizar</button>
-            </div>
+            
         </div>
 
     </form>
-
+    <center>
+        <!-- //? Atualizar -->
+       
+                <button type="submit" class="btn btn-primary">Atualizar</button>
+         
+        <a class="btn btn-primary" href="{{ route('postsmanager.index') }}"> Voltar</a>
+    </center>
+</div>
 
 
 @endsection
