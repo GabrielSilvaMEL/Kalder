@@ -1,7 +1,7 @@
 @extends('site.layout')
 
 @section('content')
-<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 40%;">
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 90%;">
     <center>
         <h1>Cadastro do autor {{ $autor->nome }}</h1>
     </center>
@@ -13,7 +13,7 @@
             <strong>Nome:</strong>
             {{ $autor->nome }}
         </div>
-        <br>
+        
 
         <!-- //* Descrição -->
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -22,7 +22,6 @@
                 {{ $autor->biografia }}
             </div>
         </div>
-        <br>
         <!-- //* descabreviada -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -30,7 +29,6 @@
                 {{ $autor->descabreviada }}
             </div>
         </div>
-        <br>
         <!-- //* Imagem -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -38,7 +36,6 @@
                 {{ $autor->imagem }}
             </div>
         </div>
-        <br>
         <!-- //* Email -->
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -46,6 +43,8 @@
                 {{ $autor->email}}
             </div>
         </div>
+        
+
         <center>
         <a class="btn btn-primary" href="{{ route('autoresmanager.index') }}"> Voltar</a>
         </center>
