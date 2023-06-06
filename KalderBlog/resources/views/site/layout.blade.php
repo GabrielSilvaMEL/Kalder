@@ -16,9 +16,12 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ Vite::asset('resources/images/outros/blog.png') }}"></link>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4305/4305612.png">
+
     <!-- CSS -->
     @vite('resources/css/style.css')
-    @vite('resources/css/custom.css')
 
   </head>
 
