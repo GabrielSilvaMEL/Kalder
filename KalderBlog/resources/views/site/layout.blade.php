@@ -51,7 +51,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('site.autor') }}">Perfil</a>
+                        <a class="nav-link" href="{{ route('site.autores') }}">Autores</a>
                     </li>
 
 
