@@ -28,11 +28,9 @@ use App\Http\Controllers\PostsManagerController;
 //* Controllers das Views
 Route::get('/',[HomeController::class,'home'])->name('site.home');
 Route::get('/about',[AboutController::class,'about'])->name('site.about');
-Route::get('/post',[PostagemController::class,'postagem'])->name('site.postagem');
+Route::get('/post/{id}', [PostagemController::class, 'postagem'])->name('site.postagem');
 Route::get('/autor',[AutorController::class,'autor'])->name('site.autor');
 Route::get('/autores',[AutoresController::class,'autores'])->name('site.autores');
 
 Route::resource('autoresmanager',AutoresManagerController::class);
-
-//* Shows
-Route::resource('postsmanager',PostsManagerController::class); //CRUD shows
+Route::resource('postsmanager',PostsManagerController::class);

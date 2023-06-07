@@ -16,7 +16,6 @@ class Autor extends Model
         'descabreviada',
         'imagem',
         'email',
-        
     ];
     
 }
