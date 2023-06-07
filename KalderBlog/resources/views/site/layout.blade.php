@@ -22,6 +22,7 @@
 
     <!-- CSS -->
     @vite('resources/css/style.css')
+    @vite('resources/css/indexperfis.css')
 
   </head>
 

@@ -61,7 +61,6 @@
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
             <a class="btn btn-primary" href="{{ route('autoresmanager.index') }}"> Voltar</a>
                     <button type="submit" class="btn btn-success">Cadastrar</button>
-                    
             </div>
     </form>
     </div>
