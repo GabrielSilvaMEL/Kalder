@@ -21,10 +21,6 @@ use App\Http\Controllers\PostsManagerController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('perfilmanager.index');
-// });
-
 //* Controllers das Views
 Route::get('/',[HomeController::class,'home'])->name('site.home');
 Route::get('/about',[AboutController::class,'about'])->name('site.about');
@@ -32,5 +28,6 @@ Route::get('/post/{id}', [PostagemController::class, 'postagem'])->name('site.po
 Route::get('/autor/{id}',[AutorController::class,'autor'])->name('site.autor');
 Route::get('/autores',[AutoresController::class,'autores'])->name('site.autores');
 
+//* Controllers das CRUDS
 Route::resource('autoresmanager',AutoresManagerController::class);
 Route::resource('postsmanager',PostsManagerController::class);
