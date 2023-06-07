@@ -20,6 +20,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 .dis-txt {
     user-select: none;
 }
@@ -152,8 +156,14 @@ body {
 }
 
 .div-autores {
-    background: linear-gradient(-90deg, #171717 0%, #472363 100%);
+    background: linear-gradient(-90deg, #18172b 0%, #39215f 100%);
     border-radius: 5px;
+    transition: 0.2s
+}
+
+.div-autores:hover {
+    box-shadow: 0px 5px #afafaf;
+    border-radius: 0px;
 }
 
 /** FOOTER */
