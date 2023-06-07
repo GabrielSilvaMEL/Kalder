@@ -14,13 +14,19 @@
     <div class="col"></div>
 
     <div class="col-8">
-        <div class="row mb-5">
-            <div class="c-div"></div>
-        </div>
 
+        @foreach ($posts as $post)
         <div class="row mb-5">
-            <div class="c-div"></div>
+            <div class="card c-div text-white">
+                <img src="{{ asset($post->imagem) }}" alt="" class="card-img-top home-img-post">
+                <div class="card-body">
+                    <h3 class="card-title">{{ $post->tituloresumido }}</h3>
+                    <p class="card-text">Publicado em {{ $post->datapub }} <br> {{ $post->autor->nome }}</p>
+                </div>
+            </div>
         </div>
+        @endforeach
+
     </div>
 
     <div class="col"></div>
