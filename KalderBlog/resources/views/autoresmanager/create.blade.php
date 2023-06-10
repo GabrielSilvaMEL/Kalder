@@ -1,9 +1,10 @@
 @extends('site.layout')
 
 @section('content')
+
 <div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 40%;">
     <center>
-        <h1>Cadastrar Autor</h1>
+        <h1>Cadastrar Autor(a)</h1>
     </center>
     
     <hr class="my-4">
@@ -26,29 +27,29 @@
         @csrf
             <!-- Nome -->
             <div class="width100">
-                <strong>Nome:</strong>
+                <strong>Nome</strong>
                 <input type="input" name="nome" class="form-control" placeholder="John Doe" maxlength="50">
             </div>
             <br>
 
             <!-- Profissão -->
             <div class="width100">
-                <strong>Profissão:</strong>
+                <strong>Profissão</strong>
                 <input type="input" name="descabreviada" class="form-control" placeholder="Músico e DJ" maxlength="50">
             </div>
             <br>
 
             <!-- Biografia -->
             <div class="width100">
-                <strong>Biografia:</strong>
-                <textarea type="texta" name="biografia" class="form-control" placeholder="Biografia breve do autor" maxlength="2000"></textarea>
+                <strong>Biografia</strong>
+                <textarea type="texta" name="biografia" class="form-control" placeholder="Biografia breve do autor(a)" maxlength="2000"></textarea>
             </div>
             <br>
 
             <!-- Imagem -->
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Imagem:</strong>
+                    <strong>Imagem</strong>
                     <input type="file" name="imagem" class="form-control" placeholder="Imagem">
                 </div>
             </div>
@@ -56,7 +57,7 @@
 
             <!-- E-mail -->
             <div class="width100">
-                <strong>E-mail:</strong>
+                <strong>E-mail</strong>
                 <input type="email" name="email" class="form-control" placeholder="nome@email.com" maxlength="50">
             </div>
             

@@ -4,7 +4,7 @@
 
 <div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 70%;">
     <center>
-        <h1>Exibição de Cadastro do Autor {{ $autor->nome }}</h1>
+        <h1>Exibição de Cadastro do(a) Autor(a) {{ $autor->nome }}</h1>
     </center>
 
     <hr class="my-4">

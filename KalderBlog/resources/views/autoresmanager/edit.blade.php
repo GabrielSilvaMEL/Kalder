@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 40%;">
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 60%;">
     <center>
-        <h1>Editar Cadastro de Autor</h1>
+        <h1>Editar Cadastro do(a) Autor(a) {{ $autor->nome }}</h1>
     </center>
 
     <hr class="my-4">
@@ -32,35 +32,35 @@
             <div class="row">
                 <!-- Nome Artístico -->
                 <div class="width100 mb-4">
-                    <strong>Nome:</strong>
+                    <strong>Nome</strong>
                     <input type="text" name="nome" value="{{ $autor->nome }}" class="form-control" placeholder="John Doe" maxlength="50">
                 </div>
                 <br>
 
                 <!-- Descrição -->
                 <div class="width100 mb-4">
-                    <strong>Biografia:</strong>
+                    <strong>Biografia</strong>
                     <textarea class="form-control" style="height:150px" value="{{ $autor->biografia }}" name="biografia" placeholder="Músico e DJ" maxlength="500">{{ $autor->biografia }}</textarea>
                 </div>
                 <br>
 
                 <!-- Profissão -->
                 <div class="width100 mb-4">
-                    <strong>Profissão:</strong>
+                    <strong>Profissão</strong>
                     <input type="text" class="form-control" value="{{ $autor->descabreviada }}" name="descabreviada" placeholder="Biografia breve do autor" maxlength="500">
                 </div>
                 <br>
 
                 <!-- Imagem -->
                 <div class="width100 mb-4">
-                    <strong>Imagem:</strong>
+                    <strong>Imagem</strong>
                     <input type="text" name="imagem" value="{{ $autor->imagem }}" class="form-control">
                 </div>
                 <br>
 
                 <!-- E-mail -->
                 <div class="width100 mb-4">
-                    <strong>E-mail:</strong>
+                    <strong>E-mail</strong>
                     <input type="email" name="email" value="{{ $autor->email}}" class="form-control" placeholder="johndoe@email.com">
                 </div>
                 <br>
