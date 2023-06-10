@@ -34,7 +34,7 @@ class AutoresManagerController extends Controller
 
         # Requisitar os campos no cadastro
         $autor = new Autor;
-        $autor->nome = $request->nome;
+        $autor->nome = $request->nome; #obrigatório
         $autor->descabreviada = $request->descabreviada; #obrigatório
         $autor->biografia = $request->biografia; #obrigatório
         $autor->imagem = ""; #opcional
