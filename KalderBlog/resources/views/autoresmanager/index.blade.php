@@ -6,6 +6,7 @@
     <center>
         <h1>Cadastro de Autores</h1>
     </center>
+    
     <hr class="my-4">
     <a class="btn btn-success" href="{{ route('autoresmanager.create') }}">Cadastrar Autor</a>
     <a class="btn btn-primary" href="{{ route('site.autores') }}"> Voltar</a>

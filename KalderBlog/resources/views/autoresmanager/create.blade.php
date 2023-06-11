@@ -28,21 +28,21 @@
             <!-- Nome -->
             <div class="width100">
                 <strong>Nome</strong>
-                <input type="input" name="nome" class="form-control" placeholder="John Doe" maxlength="50">
+                <input type="input" name="nome" class="form-control" placeholder="John Doe" maxlength="120">
             </div>
             <br>
 
             <!-- Profissão -->
             <div class="width100">
                 <strong>Profissão</strong>
-                <input type="input" name="descabreviada" class="form-control" placeholder="Músico e DJ" maxlength="50">
+                <input type="input" name="descabreviada" class="form-control" placeholder="Músico e DJ" maxlength="200">
             </div>
             <br>
 
             <!-- Biografia -->
             <div class="width100">
                 <strong>Biografia</strong>
-                <textarea type="texta" name="biografia" class="form-control" placeholder="Biografia breve do autor(a)" maxlength="2000"></textarea>
+                <textarea type="texta" name="biografia" class="form-control" placeholder="Biografia breve do autor(a)" maxlength="5000"></textarea>
             </div>
             <br>
 
@@ -58,7 +58,7 @@
             <!-- E-mail -->
             <div class="width100">
                 <strong>E-mail</strong>
-                <input type="email" name="email" class="form-control" placeholder="nome@email.com" maxlength="50">
+                <input type="email" name="email" class="form-control" placeholder="nome@email.com" maxlength="100">
             </div>
             
             <hr class="my-4">
