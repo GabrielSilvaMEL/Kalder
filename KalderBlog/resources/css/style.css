@@ -61,11 +61,12 @@ a {
     font-size: 48px;
 }
 
-/** BODY - PERFIL ||*/
+/** BODY - AUTOR ||*/
 .image-custom {
-    width: 200px;
-    height: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 292px;
+    object-fit: cover;
 }
 
 .image-custom:hover {
