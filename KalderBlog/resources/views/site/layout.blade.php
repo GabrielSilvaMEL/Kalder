@@ -54,23 +54,19 @@
                         <a class="nav-link" href="{{ route('site.autores') }}">Autores</a>
                     </li>
 
+                    <!-- CRUDs -->
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CRUDs
+                        </button>
 
-
-                    <!-- A ser apagado. Criado afim de testes -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('autoresmanager.create') }}">autorcreate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('autoresmanager.index') }}">autorindex</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('postsmanager.create') }}">postscreate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('postsmanager.index') }}">postsindex</a>
-                    </li>
-                    
+                        <ul class="dropdown-menu bg-transparent">
+                            <li><a class="dropdown-item" href="{{ route('autoresmanager.create') }}">Criar Autor</a></li>
+                            <li><a class="dropdown-item" href="{{ route('autoresmanager.index') }}">Visualizar Autores</a></li>
+                            <li><a class="dropdown-item" href="{{ route('postsmanager.create') }}">Criar Postagem</a></li>
+                            <li><a class="dropdown-item" href="{{ route('postsmanager.create') }}">Visualizar Postagens</a></li>
+                        </ul>
+                    </div>
                 </ul>
             </div>
         </div>
