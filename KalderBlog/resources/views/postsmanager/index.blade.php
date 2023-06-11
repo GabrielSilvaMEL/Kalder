@@ -4,11 +4,12 @@
 
 <div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 90%;">
     <center>
-        <h1>Cadastrar Post</h1>
+        <h1>Cadastro de Postagens</h1>
     </center>
     
     <hr class="my-4">
-    
+    <a class="btn btn-success" href="{{ route('autoresmanager.create') }}">Cadastrar Postagem</a>
+    <a class="btn btn-primary" href="{{ route('site.autores') }}"> Voltar</a>
     
     <p></p>
     @if ($message = Session::get('success'))
@@ -18,16 +19,15 @@
         </div>
     @endif
 
-
     @csrf
     @method('PUT')
 
-    <table class="table table-bordered" style="color:white">
+    <table class="table table-dark table-striped table-hover" style="color:white">
         <tr>
             <th>N°</th>
             <th>Título</th>
             <th>Título Resumido</th>
-            <th width="20%">Data de publicação</th>
+            <th width="20%">Data de Publicação</th>
             <th width="280px">Ação</th>
         </tr>
         
@@ -53,26 +53,6 @@
         </tr>
     @endforeach
     </table>
-    
-
-    {!! $posts->links() !!}
-
-           
-    </div>
-    <br>
-    <br>
-    <div>
-        <center>
-
-            <a class="btn btn-success" href="{{ route('postsmanager.create') }}">Cadastrar novo Artista</a>
-            <a class="btn btn-primary" href="{{ route('site.home') }}"> Voltar</a>
-        </center>
-    </div>
+    {!! $posts->links() !!} 
 </div>
-
-
-
-
-
-
 @endsection
