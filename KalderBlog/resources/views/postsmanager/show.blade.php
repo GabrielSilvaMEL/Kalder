@@ -2,74 +2,66 @@
 
 @section('content')
 
-<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 90%;">
+<div class="mt-5 text-start mx-auto text-white p-3 div-abtus" style="width: 70%;">
     <center>
-        <h1>Cadastrar Post</h1>
+        <h1>Exibição de Postagem</h1>
     </center>
     
     <hr class="my-4">
-   
-        <!-- titulo -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Titulo:</strong>
-                {{ $post->titulo }}
-            </div>
-        </div>
 
-        <!-- Titulo resumido -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Titulo Resumido:</strong>
-                {{ $post->tituloresumido }}
-            </div>
+    <!-- Título -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Título da Postagem</strong><br>
+            {{ $post->titulo }}
         </div>
+    </div>
+    <br>
 
-        <!-- //* Corpo -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Corpo da postagem:</strong>
-                {{ $post->corpo }}
-            </div>
+    <!-- Título Resumido -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Título Resumido</strong><br>
+            {{ $post->tituloresumido }}
         </div>
+    </div>
+    <br>
 
-        <!-- //* Data -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Data de publicação:</strong>
-                {{ $post->datapub }}
-            </div>
+    <!-- Corpo -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Corpo da Postagem</strong><br>
+            {{ $post->corpo }}
         </div>
+    </div>
+    <br>
 
-        <!-- //* Autor -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Autor:</strong>
-                {{ $post->autor->nome }}
-            </div>
+    <!-- Data da Publicação -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Data da Publicação</strong><br>
+            {{ $post->datapub }}
         </div>
+    </div>
+    <br>
 
-        <!-- //* Biografia -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Biografia:</strong>
-                {{ $post->biografia }}
-            </div>
+    <!-- Imagem -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Imagem Ilustrativa</strong><br>
+            {{ $post->imagem }}
         </div>
+    </div>
+    <br>
 
-        <!-- //* Imagem -->
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Imagem:</strong>
-                {{ $post->autor->foto }}
-            </div>
+    <!-- Autor -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Autor</strong><br>
+            {{ $post->autor->nome }}
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>autorid:</strong>
-                {{ $post->autor_id }}
-            </div>
-        </div>
+    </div>
+
     <center>
         <a class="btn btn-primary" href="{{ route('postsmanager.index') }}"> Voltar</a>
     </center>
