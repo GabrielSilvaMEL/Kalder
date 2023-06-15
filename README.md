@@ -28,7 +28,6 @@ Serão utilizadas as seguintes ferramentas:
     - **Composer** (gerenciar as dependências do Laravel);
     - **Node.js** (execução do código JavaScript no lado do servidor);
     - **Vite** (empacotador de módulos);
-    - **Breeze** (pacote do Laravel para autenticação de usuários):
 - **Figma** (design e prototipação da interface);
 - **XAMP/WAMP** (execução da aplicação em um ambiente de servidor web local);
 - **MySQL** (gerenciamento do banco de dados).
